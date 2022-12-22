@@ -20,7 +20,7 @@ app.use(notFound)
 app.use(errorHandlerMiddleware)
 
 
-const port = 3001
+const port = process.env.port || 3001
 
 const start = async() => {
     try {
